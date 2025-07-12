@@ -1,0 +1,45 @@
+{
+	"version": "1.0",
+	"provider": {
+		"name": "MyCompanyName",
+		"website": "https://www.mycompany.com",
+		"terms": "https://www.mycompany.com/legal/terms",
+		"privacy": "https://www.mycompany.com/legal/privacy"
+	},
+	"actions": {
+		"url": {
+			"subscriptions": "https://www.mycompany.com/account/subscriptions",
+			"cancel": "https://www.mycompany.com/account/cancel"
+		},
+		"api": {
+			"subscriptions": {
+				"url": "https://api.mycompany.com/opencancel/subscriptions",
+				"method": "GET",
+				"auth_required": true,
+				"response_type": "application/json"
+			},
+			"activate": {
+				"url": "https://api.mycompany.com/opencancel/activate",
+				"method": "POST",
+				"auth_required": true,
+				"response_type": "application/json"
+			},
+			"cancel": {
+				"url": "https://api.mycompany.com/opencancel/cancel",
+				"method": "POST",
+				"auth_required": true,
+				"response_type": "application/json"
+			},
+			"status": {
+				"url": "https://api.mycompany.com/opencancel/status",
+				"method": "GET",
+				"auth_required": true,
+				"response_type": "application/json"
+			}
+		}
+	},
+	"metadata": {
+		"added_at": "2025-07-13T10:00:00Z",
+		"updated_at": "2025-07-13T10:00:00Z"
+	}
+}
